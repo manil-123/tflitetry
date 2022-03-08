@@ -63,7 +63,8 @@ class _HomeScreenState extends State<HomeScreen> {
 
   loadModel() async {
     var resultant = await Tflite.loadModel(
-        model: 'assets/model_unquant.tflite', labels: 'assets/labels.txt');
+        model: 'assets/verify_model.tflite',
+        labels: 'assets/verify_labels.txt');
     print('result after loading model : $resultant');
   }
 
